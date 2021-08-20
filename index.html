@@ -16,27 +16,28 @@
   font-size: 1em;
   transition: 0.4s;
   font-weight: bold;
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  align-items: center;
 }
 
 .active, .accordion:hover {
   background-color: #800000;
 }
 
-.accordion:after{
+.accordion:before {
   content: '\002B';
   color: #800000;
   font-weight: bold;
   background-color: #FFFFFF;
   text-align: center;
-  vertical-align: middle;
   width: 20px;
   height: 20px;
   border-radius: 20px;
-  float: left;
   margin-right: 5px;
 }
 
-.active:after {
+.active:before {
   content: "\2212";
 }
 
